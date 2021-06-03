@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        var cars= ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+        var i;
+        var text="";
+        var flag=1;
+        for (i = 0; i < cars.length; i++) {    
+                text += cars[i] + "<br>";
+        }
+        function myfunc(){      
+            
+            if (flag==1){
+                document.getElementById("demo").innerHTML=text;
+                flag=0;
+            }
+            else if(flag==0){
+                document.getElementById("demo").innerHTML="";
+                flag=1;
+            }
+        }
+        </script>
+
+    </head>
+    <body>
+        <div>
+            <h2>
+                Java Script for loop
+            </h2>
+            <p id="demo"></p>
+        </div>
+        <button type="button" onclick=myfunc()>button</button>
+    </body>
+</html>
