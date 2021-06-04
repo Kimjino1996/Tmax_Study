@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head> <!--css 는 3가지방식, tag에 att 때려박는다. head에 적을 수도 있다 head, css 파일을 만들어서 import 한다.-->
+        <style>
+           /* body{
+                margin:0px;
+                padding:0px;
+            }*/
+            
+            .logo{
+                color:rgb(233, 202, 27)
+            }/*
+            #inform{
+                color: blue
+            }
+            div{
+                background-color: darkgreen;
+            }
+            #inform div{
+                background-color: darkkhaki;
+            }*/
+            .logo{
+                float:left;
+            }
+            nav ul {
+                list-style-type:none;
+                margin:0;
+                padding:0;
+                position:relative;
+                top:40px;
+                left:30px;
+                border:3px; 
+            }
+            
+            nav li{
+                display:inline;
+                margin:0 20px;
+                color:darkturquoise
+            }
+            section{
+                width:700;
+                
+            }
+            .toleft img{
+                float:left;
+                height:auto;
+                width:auto;
+              
+            }
+            /*.toleft{
+                width:400px;
+            }*/
+            .container{
+                width:1200px;
+                height:50px;
+                margin:auto;
+                
+            }
+            #inform div{
+               color:rgb(17, 11, 4);
+            }
+            .banner{
+                clear:left;
+                width:auto;
+                height:500px;
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-image: url(./asset/img/celebrity.PNG);
+                background-attachment: fixed;
+                opacity: 0.3;
+            }
+            /*.container2{
+                width:100%;
+            }*/
+            .banner h2{
+                width:300px;
+                text-align:center;
+                font-size: 20px;
+                margin:auto;
+            }
+            .banner p{
+                text-align:center;
+                width:300px;
+                margin:auto;
+            }
+            .banner .bin{
+                width:150px;
+                padding:15px 0px;
+                background-color :white;
+                border-radius:50%;
+                margin-top:30px;
+                
+            }
+            .banner div{
+                position:relative;
+                top:150px;
+            }
+           
+                
+            
+        </style>
+        <script>
+            //var x=root;
+            function closeWin() {
+                 document.getElementsByClassName("bin")[0].style.backgroundColor="black";
+                top.window.close();
+            }
+        </script>
+    </head>
+
+    <body>
+        
+            <header> <!--margin 과 padding 의 차이점-->
+                <div class="container">
+                    <div class="logo">
+                        <h1>
+                            KimJino Information
+                        </h1>
+                    </div>
+                    <nav> <!--이건 pc 용 모바일 용은 따로 만들어야 함-->
+                        <ul>
+                            <li>
+                                aboutMe
+                            </li>
+                            <li>
+                                PortFolio
+                            </li>
+                            <li>
+                                ContactMe
+                            </li>
+                            <li>
+                                Library
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="container2">
+                    <div class="banner">
+                        <div>
+                            <h2>
+                                banner
+                                <p>
+                                    김진오의 포트폴리오 페이지입니다 ~~~~~~~~~~~~~~~~~~~~~~
+                                </p>
+                                <button type="button" class="bin" onClick="closeWin()">더보기</p>
+                                <a href="#" onclick="javascript:self.close();">닫기</a>
+
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            
+            <section id="inform"> <!-- 여기는 section 안에 article 뭐 쭉쭉 내용물 들어가는 거라 section in section 은 보기가 이상하다-->
+                <div>
+                    
+                    <div class="toleft">
+                        <img src="./asset/img/myimage.PNG" alt="myprofile"/><br/>
+                    </div>
+                    
+                    <div class="toright" alt="back">
+                        <h3>
+                            About Me
+                        </h3>
+                        <h4>
+                            <a>경북대학교 컴퓨터학부 4학년 재학 중</a><br/>
+                            <a>육군 만기전역</a><br/>
+                            <a>2019년 한국 방송미디어 추계 학술대회 장려상</a><br/>
+                            <a>2020년 한국 지능 정보 시스템 학회 춘계 학술대회 우수 논문상</a><br/>
+                            <a>대구광역시 공공데이터 활용 창업 경진대회 우수상</a><br/>
+                            <a>제2회 대구 빅데이터 분석 경진대회 장려상</a><br/>
+                            <a>대경권 공공데이터 활용 경진대회 대상</a><br/>
+                            <a>LG Soft India 교육 internship</a><br/>
+                            <a>(재)대구 디지털 산업 진흥원 빅데이터 센터 근무</a><br/>
+                            <a>사용가능 언어 : C/C++, Python, JAVA</a><br/>
+                            <a href="https://github.com/Kimjino1996">github주소</a>
+                            
+                        </h4>
+                    </div>
+                </div>
+            </section>
+            
+                 
+            <section id="myproject">
+                <div>
+                    <div>
+                        <div><img src="" alt=""/></div>
+                        <div><img src="" alt=""/></div>
+                        <div><img src="" alt=""/></div>
+                        <div><img src="" alt=""/></div>
+                    </div>
+                    <div>
+                        <div><img src="" alt=""/></div>
+                        <div><img src="" alt=""/></div>
+                        <div><img src="" alt=""/></div>
+                        <div><img src="" alt=""/></div>
+                    </div>
+                </div>
+            </section>
+        
+            <footer> <!--body 안에-->
+
+            </footer>
+       
+    </body>
+
+    
+</html>
