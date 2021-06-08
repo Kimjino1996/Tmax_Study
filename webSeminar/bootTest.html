@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            BootStrap
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            var x=1;
+        $(document).ready(function(){
+          $("#hide").click(function(){
+            if (x==1){
+                $("p").hide();
+                x=0;
+            }
+            else if (x==0){
+                $("p").show();
+                x=1;
+            }
+          });
+          $("button").click(function(){
+              //console.log(this)
+              $(".select").siblings('p').remove()
+          }
+            
+          );
+        });
+        </script>
+
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <div class="container">
+            <div class ="row text-center" style="margin:20px 0">
+                
+                <button id="hide">Hide</button>
+                <div class ="col-12">학생리스트</div>    
+            </div>
+            <div class ="row text-center" id ="button_col" style="margin:20px 0">   
+            </div>
+        </div>
+                <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <script>
+      
+            var text='{"employes":['+
+            '{"firstName":"진오","lastName":"김","id":"moreInfo1"},'+
+            '{"firstName":"John2","lastName":"Doe2","id":"moreInfo2"},'+
+            '{"firstName":"John3","lastName":"Doe2","id":"moreInfo"},'+
+            '{"firstName":"John4","lastName":"Doe2","id":"moreInfo"},'+
+            '{"firstName":"John5","lastName":"Doe2","id":"moreInfo"},'+
+            '{"firstName":"John6","lastName":"Doe2","id":"moreInfo"},'+
+            '{"firstName":"John7","lastName":"Doe2","id":"moreInfo"},'+
+            '{"firstName":"John8","lastName":"Doe2","id":"moreInfo"},'+
+            '{"firstName":"John9","lastName":"Doe2","id":"moreInfo"},'+
+            '{"firstName":"John10","lastName":"Doe2","id":"moreInfo"},'+
+            '{"firstName":"John11","lastName":"Doe2","id":"moreInfo"},'+
+            '{"firstName":"John12","lastName":"Doe2","id":"moreInfo"}]}'
+            
+            obj=JSON.parse(text);
+            //var y=document.getElementsByClassName("named");
+            var final="";
+            for (var i =0; i<obj.employes.length;i++){
+              
+                vi=obj.employes[i].firstName+" " +obj.employes[i].lastName+"<br/>";
+                final+='<div class="col-xs-12 col-sm-6 col-lg-4 col-xl-3">'+
+                    '<div class="card" style="width: 100%; margin-bottom:20px;">'+
+                        '<img src="./asset/img/celebrity.PNG" class="card-img-top" alt="...">'+
+                        '<div class="card-body">'+
+                          '<h5 class="card-title">Card title</h5>'+
+                          '<p class="card-text" id="private_inform'+i+'">'+"Some quick example text to build on the card title and make up the bulk of the card's content.</p>"+
+                          '<a href="#" class="btn btn-primary" id="but_id'+i+'" data-bs-toggle="modal" data-bs-target="#exampleModal">'+vi+'</a>'+
+                          '<button class="btn2">hihi</button>'+  
+                          '</div>'+
+                        '</div>'+
+                    '</div>';
+                
+                //'<div><button class="named" type=button id="moreInfo'+(i+1)+'" value="Open Window" onclick="openWin(this.id)">'+
+                //  vi+'</button></div>'
+                //y[i].innerHTML=vi;
+            }
+            var y = document.getElementById('button_col')
+            y.innerHTML=final;
+        </script>
+
+    </body>
+</html>
