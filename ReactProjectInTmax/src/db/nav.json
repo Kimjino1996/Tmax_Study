@@ -1,0 +1,112 @@
+{
+    "menu" : [
+        {
+            "id" : 1,
+            "name" : "Home",
+            "url" : "/"
+        },
+        {
+            "id" : 2,
+            "name" : "Features",
+            "url" : "/features"
+        },
+        {
+            "id" : 3,
+            "name" : "Pricing",
+            "url" : "/pricing"
+        },
+        {
+            "id" : 4,
+            "name" : "FAQs",
+            "url" : "/faqs"
+        },
+        {
+            "id" : 5,
+            "name" : "About",
+            "url" : "/about"
+        }
+    ],
+    "sidemenu" : [
+        {
+            "id" : 1,
+            "name" : "fas fa-search",
+            "url" : "search"
+        },
+        {
+            "id" : 2,
+            "name" : "fas fa-user",
+            "url" : "/user"
+        },
+        {
+            "id" : 3,
+            "name" : "fas fa-random",
+            "url" : "/compare"
+        },
+        {
+            "id" : 4,
+            "name" : "far fa-heart",
+            "url" : "/wishlist"
+        },
+        {
+            "id" : 5,
+            "name" : "fas fa-shopping-bag",
+            "url" : "/cart"
+        }
+    ],
+    "category" : [
+        { 
+            "id" : 1,
+            "name" : "fashion"
+        },
+        { 
+            "id" : 2,
+            "name" : "men"
+        },
+        { 
+            "id" : 3,
+            "name" : "women"
+        },
+        { 
+            "id" : 4,
+            "name" : "boy"
+        }
+    ],
+    "brand" :[ 
+        {
+            "id":1,
+            "name": "sofa",
+            "img": "fas fa-couch",
+            "content": "This is the sofa which is the best thing in the world"
+        },
+        {
+            "id":2,
+            "name": "airbnb",
+            "img": "fab fa-ebay",
+            "content": "This is the airbnb which is the best application in the world"
+        },
+        {
+            "id":3,
+            "name": "android",
+            "img": "fab fa-android",
+            "content": "This is the program which is the best tool in the world"
+        },
+        {
+            "id":4,
+            "name": "apple",
+            "img": "fab fa-apple",
+            "content": "This is the fruit which is the best food in the world"
+        },
+        {
+            "id":5,
+            "name": "ebat",
+            "img": "fab fa-ebay",
+            "content": "This is the website which is the best shop in the world"
+        },
+        {
+            "id":6,
+            "name": "facebook",
+            "img": "fab fa-facebook",
+            "content": "This is the book which is the best face in the world"
+        }
+    ]
+}
