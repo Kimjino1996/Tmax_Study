@@ -7,26 +7,38 @@ import Footer from '../../pages/footer/Footer';
 import Banner from '../../elements/ui/Banner';
 import { useParams } from 'react-router-dom';
 import { useState,useEffect } from 'react';
+import Bread from '../../elements/ui/Bread';
+import { data } from 'browserslist';
+import ProductTop from '../../elements/widgets/product/productTop';
 
 export default function ProductDetail(){
     const {Id}=useParams();
     //alert(Id);
     const [paramData,setParamData]=useState([]);
+    let process = require('../../../db/myprocess.json');
     
     useEffect(() => {
-        fetch(`http://localhost:3005/product/${Id}`)
+        fetch(`http://${process.IP}:${process.PORT}/product/${Id}`)
         .then(res => {
             return res.json();
         })
         .then(data => {
             setParamData(data);
+            console.log(data);
         })
         //.catch(error => console.log(error))
     },[Id]);
 return (
     <>
             <Header/>
-            <span>{Id}</span>
+            <Bread
+                productId = {paramData.id}
+                productName = {paramData.name}
+                productUrl = {`/productdetail/${paramData.id}`}
+            />
+            <ProductTop
+                productData={paramData}
+            />
             <Footer/>
     </>
 

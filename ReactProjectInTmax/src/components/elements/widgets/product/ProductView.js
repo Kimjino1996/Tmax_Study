@@ -37,8 +37,13 @@ export default function ProductView({categoryName}){
                     <img className="hover-img" src="/assets/img/product/fashion/6.jpg" alt="" />
                 </Link>
                 <div className="product-img-badges">
-                    <span className="pink">-{item.discount}</span>
-                    <span className="purple">new</span>
+                    {
+                        item.discount>0 ? <span className="pink">-{item.discount}</span> : ''
+                    }
+                    {
+                        item.new ? <span className="purple">new</span> :''   
+                    }
+                    
                 </div>
                 <div className="product-action">
                     <div className="pro-same-action pro-wishlist">
