@@ -9,6 +9,8 @@ export default function ProDetRgtMiddle() {
     const { Id } = useParams();
 
     const [ varData, setVardata ] = useState([]);
+    const [color,setColor]= useState("");
+    const [size,setSize]=useState("");
     var process = require('../../../../db/myprocess.json');
 
     useEffect(()=>{
@@ -26,9 +28,14 @@ export default function ProDetRgtMiddle() {
         <Fragment>
             <ColorAndSize 
                 vData = {varData.variation}
-            
+                setColor={setColor}
+                setSize={setSize}
             />
-            <AddBuyAndCart /> 
+            <AddBuyAndCart 
+                data={varData}
+                color={color}
+                size={size}
+            /> 
         </Fragment>
     
     );

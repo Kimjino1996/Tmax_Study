@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ColorAndSize({vData}) {
+export default function ColorAndSize({vData,setColor,setSize}) {
    
     return(
         <div className="pro-details-size-color">
@@ -11,7 +11,7 @@ export default function ColorAndSize({vData}) {
                         console.log(vData),
                         vData ? vData.map( item => (
                             <label className={`pro-details-color-content--single ${item.color}`}>
-                                <input type="radio" name="product-color" value={item.color} checked="" />
+                                <input type="radio" name="product-color" value={item.color} checked="" onClick={()=>setColor(item.color)} />
                                 <span className="checkmark"></span>
                             </label>
                         ))

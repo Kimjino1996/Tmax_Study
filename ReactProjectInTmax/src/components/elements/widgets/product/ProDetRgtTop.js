@@ -8,8 +8,11 @@ export default function ProDetRgtTop({productData}){
             <span>$35.6  + {productData.rating}</span>
         </div>
         <div className="pro-details-rating-wrap">
-            <Rating
-                ratingValue={productData.rating}/>
+        {productData.rating && productData.rating > 0 ? (
+                        <Rating ratingValue={productData.rating} />
+                    ) : (
+                    ""
+                )}
 
         </div>
         <div className="pro-details-list">

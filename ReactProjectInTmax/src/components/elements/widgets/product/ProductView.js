@@ -6,6 +6,7 @@ export default function ProductView({categoryName}){
 
     const [newData, setnewData] = useState([]);
     console.log(newData);
+    let process = require('../../../../db/myprocess.json');
 
     useEffect(() => {
         fetch("http://localhost:3005/product")
@@ -23,7 +24,55 @@ export default function ProductView({categoryName}){
         item => item.category.filter(single => single === categoryName)[0]
       )
     : newData;
-    
+
+    const hanlePutWishList = (id) => {
+        fetch(`http://${process.IP}:${process.PORT}/product/${id}`)
+        .then(res => {
+            return res.json();
+        })
+        .then(data => {
+            fetch(`http://${process.IP}:${process.PORT}/wish/`,{
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    id: data.id,
+                    name: data.name,
+                    image: data.image,
+                    price: data.price,
+                    discount: data.discount
+                }),
+            })
+        }).then(
+            alert("success")
+        )
+    }
+    const handlePutCompareList=(id)=>{
+        fetch(`http://${process.IP}:${process.PORT}/product/${id}`)
+        .then(res => {
+            return res.json();
+        })
+        .then(data => {
+            fetch(`http://${process.IP}:${process.PORT}/compare/`,{
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    id: data.id,
+                    name: data.name,
+                    image: data.image,
+                    price: data.price,
+                    discount: data.discount,
+                    shortDescription:data.shortDescription,
+                    rating:data.rating
+                }),
+            })
+        }).then(
+            alert("success")
+        )
+    }
     // const searchData = newData.filter(index => (
     //    index.category[0] === categoryName || index.category[1] === categoryName || index.category[2] === categoryName
     // ))
@@ -47,13 +96,19 @@ export default function ProductView({categoryName}){
                 </div>
                 <div className="product-action">
                     <div className="pro-same-action pro-wishlist">
-                        <button className="" title="Add to wishlist"><i className="las la-bookmark"></i></button>
+                        <button className="" title="Add to wishlist"
+                            value={item.id}
+                            onClick={()=> hanlePutWishList(item.id)}
+                        ><i className="las la-bookmark"></i></button>
                     </div>
                     <div className="pro-same-action pro-cart">
                         <button disabled="" className="active">Out of Stock</button>
                     </div>
                     <div className="pro-same-action pro-quickview">
-                        <button title="Quick View"><i className="las la-eye"></i></button>
+                        <button title="Quick View"
+                        value={item.id}
+                        onClick={()=>handlePutCompareList(item.id)}
+                        ><i className="las la-eye"></i></button>
                     </div>
                 </div>
             </div>
