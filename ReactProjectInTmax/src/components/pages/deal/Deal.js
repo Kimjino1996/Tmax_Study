@@ -7,6 +7,8 @@ export default function Deal(){
 
     const [ categoryName , setCategoryName ] = useState("fashion");
     console.log(categoryName);
+    let sliceNumber=12;
+    let columNumber=3;
 
     return(
 
@@ -16,7 +18,11 @@ export default function Deal(){
                 <TabMenu setCategoryName = {setCategoryName}
                     categoryName={categoryName}
                 />
-                <ProductView categoryName = {categoryName}/>
+                <ProductView 
+                categoryName = {categoryName}
+                sliceNumber={sliceNumber}
+                columNumber={columNumber}
+                />
                
             </div> 
         </section> 

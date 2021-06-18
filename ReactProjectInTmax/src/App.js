@@ -14,9 +14,12 @@ import "./assets/css/bootstrap.css";
 import "./assets/css/googlefont.css";
 import "./assets/css/style.css";
 import ToTop from"./utility/ToTop"
+import ProductList from './components/pages/productlist/ProductList';
+import MyAccount from './components/pages/myaccount/MyAccount';
 //import "./assets/css/vendor-fontawesome-free.css";
 //import "./assets/css/ionicons.min.css"
 import  "./assets/icons8/css/line-awesome.css"
+
 function App() {
 
   return (
@@ -30,8 +33,10 @@ function App() {
         <Route exact path="/compare"><Compare/></Route>
         <Route exact path ="/wishlist"><WishList/></Route> 
         <Route exact path ="/cart"><Cart/></Route>
+        <Route exact path ="/productlist"><ProductList></ProductList></Route>
         <Route exact path="/productdetail/:Id"><ProductDetail></ProductDetail></Route>
         {/*<Route exact path="/productdetail/:id"><Productdetail/></Route>*/}
+        <Route exact path="/myaccount"><MyAccount/></Route>
       </Switch>
       </ToTop>
     </BrowserRouter>

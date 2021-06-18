@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import Rating from '../../ui/Rating';
 
-export default function ProductView({categoryName}){
+export default function ProductView({categoryName,sliceNumber,columNumber}){
 
     const [newData, setnewData] = useState([]);
     console.log(newData);
@@ -78,7 +78,7 @@ export default function ProductView({categoryName}){
     // ))
     const productList = searchData.map((item, index) => (
 
-        <div className="col-xl-3 col-md-6 col-lg-3 col-sm-6 " key={item.id}>
+        <div className={`col-xl-${columNumber} col-md-6 col-lg-${columNumber} col-sm-6`} key={item.id}>
         <div className="product-wrap mb-25">
             <div className="product-img">
                 <Link to={`/productdetail/${item.id}`}>
@@ -130,7 +130,7 @@ export default function ProductView({categoryName}){
     </div>
         
 
-    )).slice(0,8);
+    )).slice(0,sliceNumber);
 
     return(
         <div className="row mt-5">
