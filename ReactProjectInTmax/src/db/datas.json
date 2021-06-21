@@ -1,13 +1,5 @@
 {
-  "users":[
-    {
-      "id":1,
-      "userId":"",
-      "pass":"",
-      "email":"",
-      "phone":""
-    }
-  ],
+  "users": [],
   "size": [
     {
       "id": 1,
@@ -109,20 +101,308 @@
   ],
   "cart": [
     {
-      "id": "4",
-      "name": "Lorem ipsum fashion coat",
+      "id": "60",
+      "name": "Lorem ipsum cosmetics one",
       "image": [
-        "/assets/img/product/fashion/4.jpg",
-        "/assets/img/product/fashion/2.jpg",
+        "/assets/img/product/cosmetics/1.jpg",
+        "/assets/img/product/cosmetics/2.jpg",
+        "/assets/img/product/cosmetics/3.jpg",
+        "/assets/img/product/cosmetics/4.jpg",
+        "/assets/img/product/cosmetics/5.jpg"
+      ],
+      "price": 3.5,
+      "discount": 10,
+      "qty": 1,
+      "color": "",
+      "size": ""
+    },
+    {
+      "id": "5",
+      "name": "Lorem ipsum female coat",
+      "image": [
         "/assets/img/product/fashion/5.jpg",
+        "/assets/img/product/fashion/2.jpg",
+        "/assets/img/product/fashion/4.jpg",
         "/assets/img/product/fashion/7.jpg",
         "/assets/img/product/fashion/9.jpg"
       ],
-      "price": 15.5,
+      "price": 25.5,
+      "discount": 10,
+      "qty": 1,
+      "color": "",
+      "size": ""
+    },
+    {
+      "id": "6",
+      "name": "Lorem ipsum jacket",
+      "image": [
+        "/assets/img/product/fashion/6.jpg",
+        "/assets/img/product/fashion/3.jpg",
+        "/assets/img/product/fashion/1.jpg",
+        "/assets/img/product/fashion/8.jpg",
+        "/assets/img/product/fashion/9.jpg"
+      ],
+      "price": 19.85,
       "discount": 0,
-      "qty": 10,
-      "color": "blue",
-      "size": "XL"
+      "qty": 1,
+      "color": "",
+      "size": ""
+    },
+    {
+      "id": "7",
+      "name": "Lorem ipsum fashion female coat",
+      "image": [
+        "/assets/img/product/fashion/7.jpg",
+        "/assets/img/product/fashion/5.jpg",
+        "/assets/img/product/fashion/2.jpg",
+        "/assets/img/product/fashion/4.jpg",
+        "/assets/img/product/fashion/9.jpg"
+      ],
+      "price": 55.5,
+      "discount": 40,
+      "qty": 1,
+      "color": "",
+      "size": ""
+    },
+    {
+      "id": "8",
+      "name": "Lorem ipsum fashion jacket",
+      "image": [
+        "/assets/img/product/fashion/8.jpg",
+        "/assets/img/product/fashion/6.jpg",
+        "/assets/img/product/fashion/3.jpg",
+        "/assets/img/product/fashion/1.jpg",
+        "/assets/img/product/fashion/9.jpg"
+      ],
+      "price": 29.85,
+      "discount": 10,
+      "qty": 1,
+      "color": "",
+      "size": ""
+    },
+    {
+      "id": "9",
+      "name": "Lorem ipsum fashion female top",
+      "image": [
+        "/assets/img/product/fashion/9.jpg",
+        "/assets/img/product/fashion/7.jpg",
+        "/assets/img/product/fashion/5.jpg",
+        "/assets/img/product/fashion/2.jpg",
+        "/assets/img/product/fashion/4.jpg"
+      ],
+      "price": 35.6,
+      "discount": 0,
+      "qty": 1,
+      "color": "",
+      "size": ""
+    },
+    {
+      "id": "10",
+      "name": "Lorem ipsum blender",
+      "image": [
+        "/assets/img/product/electronics/1.jpg",
+        "/assets/img/product/electronics/2.jpg",
+        "/assets/img/product/electronics/3.jpg",
+        "/assets/img/product/electronics/4.jpg",
+        "/assets/img/product/electronics/5.jpg"
+      ],
+      "price": 15.6,
+      "discount": 0,
+      "qty": 1,
+      "color": "",
+      "size": ""
+    },
+    {
+      "id": "11",
+      "name": "Lorem ipsum speaker",
+      "image": [
+        "/assets/img/product/electronics/2.jpg",
+        "/assets/img/product/electronics/3.jpg",
+        "/assets/img/product/electronics/4.jpg",
+        "/assets/img/product/electronics/5.jpg",
+        "/assets/img/product/electronics/6.jpg"
+      ],
+      "price": 10.6,
+      "discount": 10,
+      "qty": 1,
+      "color": "",
+      "size": ""
+    },
+    {
+      "id": "12",
+      "name": "Lorem ipsum camera",
+      "image": [
+        "/assets/img/product/electronics/3.jpg",
+        "/assets/img/product/electronics/4.jpg",
+        "/assets/img/product/electronics/5.jpg",
+        "/assets/img/product/electronics/6.jpg",
+        "/assets/img/product/electronics/7.jpg"
+      ],
+      "price": 12.5,
+      "discount": 20,
+      "qty": 1,
+      "color": "",
+      "size": ""
+    },
+    {
+      "id": "13",
+      "name": "Lorem ipsum monitor",
+      "image": [
+        "/assets/img/product/electronics/4.jpg",
+        "/assets/img/product/electronics/5.jpg",
+        "/assets/img/product/electronics/6.jpg",
+        "/assets/img/product/electronics/7.jpg",
+        "/assets/img/product/electronics/8.jpg"
+      ],
+      "price": 14.5,
+      "discount": 30,
+      "qty": 1,
+      "color": "",
+      "size": ""
+    },
+    {
+      "id": "14",
+      "name": "Lorem ipsum small speaker",
+      "image": [
+        "/assets/img/product/electronics/5.jpg",
+        "/assets/img/product/electronics/6.jpg",
+        "/assets/img/product/electronics/7.jpg",
+        "/assets/img/product/electronics/8.jpg",
+        "/assets/img/product/electronics/1.jpg"
+      ],
+      "price": 2.5,
+      "discount": 10,
+      "qty": 1,
+      "color": "",
+      "size": ""
+    },
+    {
+      "id": "15",
+      "name": "Lorem ipsum microphone",
+      "image": [
+        "/assets/img/product/electronics/6.jpg",
+        "/assets/img/product/electronics/7.jpg",
+        "/assets/img/product/electronics/8.jpg",
+        "/assets/img/product/electronics/1.jpg",
+        "/assets/img/product/electronics/2.jpg"
+      ],
+      "price": 12.5,
+      "discount": 0,
+      "qty": 1,
+      "color": "",
+      "size": ""
+    },
+    {
+      "id": "34",
+      "name": "Lorem ipsum fruit one",
+      "image": [
+        "/assets/img/product/fruits/1.jpg",
+        "/assets/img/product/fruits/2.jpg",
+        "/assets/img/product/fruits/3.jpg",
+        "/assets/img/product/fruits/4.jpg",
+        "/assets/img/product/fruits/5.jpg"
+      ],
+      "price": 15.6,
+      "discount": 0,
+      "qty": 1,
+      "color": "",
+      "size": ""
+    },
+    {
+      "id": "35",
+      "name": "Lorem ipsum fruit two",
+      "image": [
+        "/assets/img/product/fruits/2.jpg",
+        "/assets/img/product/fruits/3.jpg",
+        "/assets/img/product/fruits/4.jpg",
+        "/assets/img/product/fruits/5.jpg",
+        "/assets/img/product/fruits/6.jpg"
+      ],
+      "price": 10.6,
+      "discount": 10,
+      "qty": 1,
+      "color": "",
+      "size": ""
+    },
+    {
+      "id": "36",
+      "name": "Lorem ipsum fruit three",
+      "image": [
+        "/assets/img/product/fruits/3.jpg",
+        "/assets/img/product/fruits/4.jpg",
+        "/assets/img/product/fruits/5.jpg",
+        "/assets/img/product/fruits/6.jpg",
+        "/assets/img/product/fruits/7.jpg"
+      ],
+      "price": 12.5,
+      "discount": 20,
+      "qty": 1,
+      "color": "",
+      "size": ""
+    },
+    {
+      "id": "37",
+      "name": "Lorem ipsum fruit four",
+      "image": [
+        "/assets/img/product/fruits/4.jpg",
+        "/assets/img/product/fruits/5.jpg",
+        "/assets/img/product/fruits/6.jpg",
+        "/assets/img/product/fruits/7.jpg",
+        "/assets/img/product/fruits/8.jpg"
+      ],
+      "price": 14.5,
+      "discount": 30,
+      "qty": 1,
+      "color": "",
+      "size": ""
+    },
+    {
+      "id": "61",
+      "name": "Lorem ipsum cosmetics two",
+      "image": [
+        "/assets/img/product/cosmetics/2.jpg",
+        "/assets/img/product/cosmetics/3.jpg",
+        "/assets/img/product/cosmetics/4.jpg",
+        "/assets/img/product/cosmetics/5.jpg",
+        "/assets/img/product/cosmetics/6.jpg"
+      ],
+      "price": 18.5,
+      "discount": 15,
+      "qty": 1,
+      "color": "",
+      "size": ""
+    },
+    {
+      "id": "27",
+      "name": "Lorem ipsum plant two",
+      "image": [
+        "/assets/img/product/plants/2.jpg",
+        "/assets/img/product/plants/3.jpg",
+        "/assets/img/product/plants/4.jpg",
+        "/assets/img/product/plants/5.jpg",
+        "/assets/img/product/plants/6.jpg"
+      ],
+      "price": 10.6,
+      "discount": 10,
+      "qty": 1,
+      "color": "",
+      "size": ""
+    },
+    {
+      "id": "41",
+      "name": "Lorem ipsum fruit eight",
+      "image": [
+        "/assets/img/product/fruits/8.jpg",
+        "/assets/img/product/fruits/1.jpg",
+        "/assets/img/product/fruits/2.jpg",
+        "/assets/img/product/fruits/3.jpg",
+        "/assets/img/product/fruits/4.jpg"
+      ],
+      "price": 32.5,
+      "discount": 10,
+      "qty": 6,
+      "color": "",
+      "size": ""
     }
   ],
   "wish": [
